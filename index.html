@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victory Okpala Chiamaka | Student Portfolio</title>
+  <meta name="description" content="Student portfolio and academic management site for Victory Okpala Chiamaka, Data Science student at MIVA Open University in Enugu, Nigeria.">
+  <meta property="og:title" content="Victory Okpala Chiamaka | Student Portfolio">
+  <meta property="og:description" content="Student portfolio and academic management site for Victory Okpala Chiamaka, Data Science student at MIVA Open University.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Playfair Display for headings and Inter for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b2a4a'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='32' font-weight='700' fill='%23f7f5f0'%3EV%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header id="site-header" class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-wordmark">Victory Okpala</a>
+
+      <button
+        type="button"
+        id="nav-toggle"
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="hamburger-line" aria-hidden="true"></span>
+        <span class="hamburger-line" aria-hidden="true"></span>
+        <span class="hamburger-line" aria-hidden="true"></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="planner.html" class="nav-link">Planner</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="contact.html" class="btn btn-primary btn-sm header-cta">Get in Touch</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <!-- Hero Section -->
+      <section class="section hero-grid" aria-labelledby="hero-heading">
+        <div>
+          <p id="dynamic-greeting" class="greeting-text fade-rise">Welcome to my portfolio.</p>
+          <h1 id="hero-heading" class="fade-rise delay-1">Victory Okpala Chiamaka</h1>
+          <p class="typing-line fade-rise delay-2">
+            <span id="typing-role" class="typing-role">Data Science Student</span><span class="typing-cursor" aria-hidden="true"></span>
+          </p>
+
+          <p class="hero-bio fade-rise delay-3">
+            I am a Data Science undergraduate at MIVA Open University based in Enugu, Nigeria. Before starting my degree, I spent three years working in marketing and helping run daily operations inside our family business. Those years taught me how pricing, stock discipline, and customer trust keep a shop profitable. Today I study spreadsheets, Python, and statistical analysis so I can read those same commercial signals clearly on paper and on screen. My aim is to work in marketing analytics and business intelligence, turning everyday sales records into practical choices for growing teams.
+          </p>
+
+          <div class="btn-group fade-rise delay-3">
+            <a href="projects.html" class="btn btn-primary">View Case Studies</a>
+            <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-media fade-rise delay-2">
+          <figure class="profile-frame">
+            <div class="profile-img-wrap">
+              <img
+                id="profile-photo"
+                src="images/profile.jpg"
+                alt="Portrait photograph of Victory Okpala Chiamaka"
+                class="profile-photo"
+                width="400"
+                height="500"
+              >
+            </div>
+            <figcaption class="profile-caption">Victory Okpala Chiamaka · BSc Data Science, Enugu</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Animated Counters Strip -->
+      <section class="section reveal" aria-label="Key profile metrics">
+        <div class="counters-grid">
+          <!-- REPLACE with real figures -->
+          <div class="counter-card">
+            <span class="counter-value tabular-nums" data-count-target="3" data-count-suffix="+">3+</span>
+            <span class="counter-label">Years in marketing and retail operations</span>
+          </div>
+          <!-- REPLACE with real figures -->
+          <div class="counter-card">
+            <span class="counter-value tabular-nums" data-count-target="2" data-count-suffix="">2</span>
+            <span class="counter-label">Detailed analytics case studies</span>
+          </div>
+          <!-- REPLACE with real figures -->
+          <div class="counter-card">
+            <span class="counter-value tabular-nums" data-count-target="5" data-count-suffix="">5</span>
+            <span class="counter-label">Core tools from Excel to Python</span>
+          </div>
+          <!-- REPLACE with real figures -->
+          <div class="counter-card">
+            <span class="counter-value tabular-nums" data-count-target="100" data-count-suffix="%">100%</span>
+            <span class="counter-label">Commitment to clear reporting</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- What I Bring Section -->
+      <section class="section reveal" aria-labelledby="bring-heading">
+        <div class="section-header">
+          <span class="section-kicker">Core Capabilities</span>
+          <h2 id="bring-heading">What I Bring</h2>
+          <p class="section-subtitle">Three disciplines that inform how I analyse problems and communicate results.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card reveal">
+            <span class="card-index">01</span>
+            <h3>Marketing Experience</h3>
+            <p>
+              Three years of practical marketing work shaped how I read buyer behaviour. I have handled customer outreach, seasonal promotions, and retention conversations where clear listening matters as much as numbers.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-index">02</span>
+            <h3>Business Management</h3>
+            <p>
+              Managing operations for my family business gave me direct responsibility for sales logs, supplier schedules, and stock balances. I know what happens on the shop floor when popular items run out too early.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-index">03</span>
+            <h3>Data Science Skills</h3>
+            <p>
+              Through my BSc in Data Science at MIVA Open University, I am building fluency in Excel modelling, Power BI visual reporting, and foundational Python with pandas and matplotlib.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Closing Call to Action -->
+      <section class="section reveal" aria-labelledby="cta-heading">
+        <div class="cta-panel">
+          <div>
+            <span class="section-kicker">Next Step</span>
+            <h2 id="cta-heading">Explore my case studies or get in touch</h2>
+            <p class="section-subtitle">
+              Read the two full analytics write ups on the Projects page, or send a note directly through the contact form.
+            </p>
+          </div>
+          <div class="btn-group" style="margin-top: 0;">
+            <a href="projects.html" class="btn btn-primary">Read Case Studies</a>
+            <a href="contact.html" class="btn btn-secondary">Send a Message</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        &copy; <span id="current-year">2026</span> Victory Okpala Chiamaka · MIVA Open University
+      </p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/Chiamaka-Victory" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="mailto:o.victory0585@miva.edu.ng">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="Revenue share and retention priority across four RFM customer segments">
+  <rect width="720" height="420" fill="#f7f5f0"/>
+  <rect x="24" y="24" width="672" height="372" rx="10" fill="#ffffff" stroke="#e7e4dc"/>
+  <text x="48" y="62" font-family="Georgia, serif" font-size="19" font-weight="700" fill="#0f172a">Revenue Share by Customer Segment</text>
+  <text x="48" y="84" font-family="sans-serif" font-size="12" fill="#475569">Targeting the right message to each segment based on spend and recency</text>
+
+  <text x="48" y="138" font-family="sans-serif" font-size="13" font-weight="600" fill="#0f172a">Loyal Customers (22% of buyers)</text>
+  <rect x="290" y="122" width="320" height="24" rx="4" fill="#0b2a4a"/>
+  <text x="622" y="139" font-family="sans-serif" font-size="13" font-weight="700" fill="#0f172a">51%</text>
+
+  <text x="48" y="192" font-family="sans-serif" font-size="13" font-weight="600" fill="#0f172a">Regular Buyers (34% of buyers)</text>
+  <rect x="290" y="176" width="180" height="24" rx="4" fill="#475569"/>
+  <text x="482" y="193" font-family="sans-serif" font-size="13" font-weight="700" fill="#0f172a">28%</text>
+
+  <text x="48" y="246" font-family="sans-serif" font-size="13" font-weight="600" fill="#0f172a">At Risk Group (18% of buyers)</text>
+  <rect x="290" y="230" width="96" height="24" rx="4" fill="#b08d57"/>
+  <text x="398" y="247" font-family="sans-serif" font-size="13" font-weight="700" fill="#0f172a">14%</text>
+
+  <text x="48" y="300" font-family="sans-serif" font-size="13" font-weight="600" fill="#0f172a">Occasional Buyers (26% of buyers)</text>
+  <rect x="290" y="284" width="48" height="24" rx="4" fill="#94a3b8"/>
+  <text x="350" y="301" font-family="sans-serif" font-size="13" font-weight="700" fill="#0f172a">7%</text>
+
+  <text x="48" y="366" font-family="sans-serif" font-size="12" fill="#0b2a4a" font-weight="600">Action focus: Retain top 22% with early stock alerts and win back At Risk buyers</text>
+</svg>

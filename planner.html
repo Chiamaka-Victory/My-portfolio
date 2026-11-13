@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Planner | Victory Okpala Chiamaka</title>
+  <meta name="description" content="Interactive academic task manager with priority levels, categories, due dates, progress bar, and local browser persistence.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b2a4a'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='32' font-weight='700' fill='%23f7f5f0'%3EV%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/planner.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header id="site-header" class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-wordmark">Victory Okpala</a>
+
+      <button
+        type="button"
+        id="nav-toggle"
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="hamburger-line" aria-hidden="true"></span>
+        <span class="hamburger-line" aria-hidden="true"></span>
+        <span class="hamburger-line" aria-hidden="true"></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="planner.html" class="nav-link active" aria-current="page">Planner</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="contact.html" class="btn btn-primary btn-sm header-cta">Get in Touch</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <section class="section page-header fade-rise" aria-labelledby="planner-heading">
+        <span class="section-kicker">Academic Management</span>
+        <h1 id="planner-heading">Academic Planner</h1>
+        <p class="lead">
+          Organise coursework, study deadlines, and weekly priorities. Your tasks stay saved automatically inside your browser.
+        </p>
+      </section>
+
+      <section class="section fade-rise delay-1" aria-label="Task manager">
+        <!-- Add Task Form -->
+        <div class="planner-panel">
+          <form id="planner-form" class="planner-form" novalidate>
+            <div class="form-group">
+              <label for="task-input" class="form-label">Task Description</label>
+              <input
+                type="text"
+                id="task-input"
+                class="form-control"
+                placeholder="Write a study goal or assignment"
+                autocomplete="off"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="task-date" class="form-label">Due Date</label>
+              <input type="date" id="task-date" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label for="task-category" class="form-label">Category</label>
+              <select id="task-category" class="form-control">
+                <option value="COS 106: Web Tech">COS 106: Web Tech</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Python and Analysis">Python and Analysis</option>
+                <option value="Business and Marketing">Business and Marketing</option>
+                <option value="General Study">General Study</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="task-priority" class="form-label">Priority</label>
+              <select id="task-priority" class="form-control">
+                <option value="Low">Low</option>
+                <option value="Medium" selected>Medium</option>
+                <option value="High">High</option>
+              </select>
+            </div>
+
+            <button type="submit" id="add-task-btn" class="btn btn-primary">Add Task</button>
+          </form>
+          <p id="task-error" class="field-error" role="alert" aria-live="polite"></p>
+        </div>
+
+        <!-- Animated Completion Progress Bar -->
+        <div class="planner-progress-card">
+          <div class="planner-progress-head">
+            <span>Completion Progress</span>
+            <span id="planner-progress-percent" class="tabular-nums">0%</span>
+          </div>
+          <div class="planner-progress-track" aria-hidden="true">
+            <div id="planner-progress-fill" class="planner-progress-fill"></div>
+          </div>
+        </div>
+
+        <!-- Live Task Counters -->
+        <div class="stats-strip" aria-label="Task summary">
+          <div class="stat-box">
+            <span class="stat-label">Total</span>
+            <span id="count-total" class="stat-value tabular-nums">0</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Completed</span>
+            <span id="count-completed" class="stat-value tabular-nums">0</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Remaining</span>
+            <span id="count-remaining" class="stat-value tabular-nums">0</span>
+          </div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="planner-toolbar">
+          <div class="filter-controls" role="group" aria-label="Filter tasks by status">
+            <button type="button" class="filter-btn is-active" data-task-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-btn" data-task-filter="active" aria-pressed="false">Active</button>
+            <button type="button" class="filter-btn" data-task-filter="completed" aria-pressed="false">Completed</button>
+          </div>
+
+          <button type="button" id="clear-completed-btn" class="btn btn-secondary btn-sm" hidden>
+            Clear Completed
+          </button>
+        </div>
+
+        <!-- Task List -->
+        <ul id="task-list" class="task-list" aria-live="polite"></ul>
+
+        <!-- Empty State -->
+        <p id="planner-empty" class="empty-state">
+          No tasks yet. Add an assignment, study goal, or deadline above.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        &copy; <span id="current-year">2026</span> Victory Okpala Chiamaka · MIVA Open University
+      </p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/Chiamaka-Victory" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="mailto:o.victory0585@miva.edu.ng">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="Monthly sales revenue and order volume chart from January to December">
+  <rect width="720" height="420" fill="#f7f5f0"/>
+  <rect x="24" y="24" width="672" height="372" rx="10" fill="#ffffff" stroke="#e7e4dc"/>
+  <text x="48" y="62" font-family="Georgia, serif" font-size="19" font-weight="700" fill="#0f172a">Monthly Revenue Trend (January to December)</text>
+  <text x="48" y="84" font-family="sans-serif" font-size="12" fill="#475569">Sample retail figures in Nigerian Naira (millions) across 12 months</text>
+  <line x1="56" y1="120" x2="664" y2="120" stroke="#efede7"/>
+  <line x1="56" y1="180" x2="664" y2="180" stroke="#efede7"/>
+  <line x1="56" y1="240" x2="664" y2="240" stroke="#efede7"/>
+  <line x1="56" y1="300" x2="664" y2="300" stroke="#e7e4dc" stroke-width="1.5"/>
+  <!-- Monthly bars -->
+  <rect x="64" y="216" width="34" height="84" rx="3" fill="#cbd5e1"/>
+  <rect x="114" y="224" width="34" height="76" rx="3" fill="#cbd5e1"/>
+  <rect x="164" y="196" width="34" height="104" rx="3" fill="#94a3b8"/>
+  <rect x="214" y="188" width="34" height="112" rx="3" fill="#94a3b8"/>
+  <rect x="264" y="172" width="34" height="128" rx="3" fill="#64748b"/>
+  <rect x="314" y="180" width="34" height="120" rx="3" fill="#64748b"/>
+  <rect x="364" y="168" width="34" height="132" rx="3" fill="#475569"/>
+  <rect x="414" y="152" width="34" height="148" rx="3" fill="#0b2a4a"/>
+  <rect x="464" y="162" width="34" height="138" rx="3" fill="#475569"/>
+  <rect x="514" y="146" width="34" height="154" rx="3" fill="#0b2a4a"/>
+  <rect x="564" y="124" width="34" height="176" rx="3" fill="#0b2a4a"/>
+  <rect x="614" y="102" width="34" height="198" rx="3" fill="#b08d57"/>
+  <!-- Month labels -->
+  <text x="81" y="324" font-family="sans-serif" font-size="11" fill="#475569" text-anchor="middle">Jan</text>
+  <text x="131" y="324" font-family="sans-serif" font-size="11" fill="#475569" text-anchor="middle">Feb</text>
+  <text x="181" y="324" font-family="sans-serif" font-size="11" fill="#475569" text-anchor="middle">Mar</text>
+  <text x="231" y="324" font-family="sans-serif" font-size="11" fill="#475569" text-anchor="middle">Apr</text>
+  <text x="281" y="324" font-family="sans-serif" font-size="11" fill="#475569" text-anchor="middle">May</text>
+  <text x="331" y="324" font-family="sans-serif" font-size="11" fill="#475569" text-anchor="middle">Jun</text>
+  <text x="381" y="324" font-family="sans-serif" font-size="11" fill="#475569" text-anchor="middle">Jul</text>
+  <text x="431" y="324" font-family="sans-serif" font-size="11" fill="#475569" text-anchor="middle">Aug</text>
+  <text x="481" y="324" font-family="sans-serif" font-size="11" fill="#475569" text-anchor="middle">Sep</text>
+  <text x="531" y="324" font-family="sans-serif" font-size="11" fill="#475569" text-anchor="middle">Oct</text>
+  <text x="581" y="324" font-family="sans-serif" font-size="11" fill="#475569" text-anchor="middle">Nov</text>
+  <text x="631" y="324" font-family="sans-serif" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">Dec</text>
+  <text x="48" y="366" font-family="sans-serif" font-size="12" fill="#0b2a4a" font-weight="600">Peak quarter: October to December accounted for 34% of annual turnover</text>
+</svg>

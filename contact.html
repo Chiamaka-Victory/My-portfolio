@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Victory Okpala Chiamaka</title>
+  <meta name="description" content="Contact Victory Okpala Chiamaka in Enugu, Nigeria for business analysis, marketing analytics, or academic projects.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b2a4a'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='32' font-weight='700' fill='%23f7f5f0'%3EV%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/contact.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header id="site-header" class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-wordmark">Victory Okpala</a>
+
+      <button
+        type="button"
+        id="nav-toggle"
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="hamburger-line" aria-hidden="true"></span>
+        <span class="hamburger-line" aria-hidden="true"></span>
+        <span class="hamburger-line" aria-hidden="true"></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="planner.html" class="nav-link">Planner</a></li>
+          <li><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="contact.html" class="btn btn-primary btn-sm header-cta">Get in Touch</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <section class="section page-header fade-rise" aria-labelledby="contact-heading">
+        <span class="section-kicker">Get in Touch</span>
+        <h1 id="contact-heading">Contact</h1>
+        <p class="lead">
+          Reach out regarding marketing analytics, business analysis collaborations, or academic coursework.
+        </p>
+      </section>
+
+      <section class="section contact-grid fade-rise delay-1" aria-label="Contact details and message form">
+        <!-- Direct Details Column -->
+        <aside class="card" aria-labelledby="details-heading">
+          <h2 id="details-heading">Direct Details</h2>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">Email</span>
+              <a href="mailto:o.victory0585@miva.edu.ng" class="contact-value">o.victory0585@miva.edu.ng</a>
+            </li>
+            <li>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+2349130917812" class="contact-value">+234 913 091 7812</a>
+            </li>
+            <li>
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Enugu, Nigeria</span>
+            </li>
+            <li>
+              <span class="contact-label">University</span>
+              <span class="contact-value">MIVA Open University · BSc Data Science</span>
+            </li>
+            <li>
+              <span class="contact-label">GitHub Profile</span>
+              <a href="https://github.com/Chiamaka-Victory" target="_blank" rel="noopener noreferrer" class="contact-value">
+                Open GitHub Profile
+              </a>
+            </li>
+          </ul>
+
+          <p class="response-note">
+            <strong>Response time:</strong> I check messages every evening after lectures and business hours and normally reply within one to two working days.
+          </p>
+        </aside>
+
+        <!-- Semantic Contact Form -->
+        <div class="card">
+          <h2>Send a Message</h2>
+          <form
+            id="contact-form"
+            action="https://formsubmit.co/o.victory0585@miva.edu.ng"
+            method="POST"
+            novalidate
+          >
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                  placeholder="Your full name"
+                  autocomplete="name"
+                  required
+                >
+                <svg id="name-tick" class="field-valid-tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <p id="name-error" class="field-error" role="alert"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <div class="input-wrapper">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  required
+                >
+                <svg id="email-tick" class="field-valid-tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <p id="email-error" class="field-error" role="alert"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <div class="input-wrapper">
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="form-control"
+                  inputmode="numeric"
+                  placeholder="08012345678"
+                  autocomplete="tel"
+                  required
+                >
+                <svg id="phone-tick" class="field-valid-tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <p class="field-hint">Enter digits only, with no spaces or symbols.</p>
+              <p id="phone-error" class="field-error" role="alert"></p>
+            </div>
+
+            <div class="form-group">
+              <div class="form-label-row">
+                <label for="message" class="form-label">Message</label>
+                <span id="char-counter" class="char-counter tabular-nums">0 / 500 characters</span>
+              </div>
+              <div class="input-wrapper input-wrapper--textarea">
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  rows="5"
+                  maxlength="500"
+                  placeholder="Write your message here"
+                  required
+                ></textarea>
+                <svg id="message-tick" class="field-valid-tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <p id="message-error" class="field-error" role="alert"></p>
+            </div>
+
+            <button type="submit" id="submit-btn" class="btn btn-primary">Send Message</button>
+
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        &copy; <span id="current-year">2026</span> Victory Okpala Chiamaka · MIVA Open University
+      </p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/Chiamaka-Victory" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="mailto:o.victory0585@miva.edu.ng">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
