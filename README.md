@@ -37,8 +37,10 @@ Search for `REPLACE` across the HTML files to update:
 
 ## Hosting on Vercel
 
-1. Push the full project (including `package.json`, `vite.config.ts`, and `vercel.json`) to your GitHub repository.
+1. Push the full project to GitHub with **all folders intact** (`css/`, `js/`, `images/`, `media/`, `index.html`, `about.html`, `projects.html`, `planner.html`, `contact.html`, `package.json`, `vite.config.ts`, `vercel.json`).
+   - **Important if using GitHub's web Upload Files page:** Drag and drop the entire extracted project contents (folders included) into the GitHub upload box rather than clicking "choose your files" (which skips folders and leaves pages unstyled without CSS, JavaScript, or images).
 2. Open Vercel, click **Add New Project**, and import your GitHub repository.
-3. Keep the detected settings (`vercel.json` automatically sets Framework Preset to **Vite**, Build Command to `npm run build`, and Output Directory to `dist`) and click **Deploy**.
+3. Leave **Root Directory** as `./` and keep the detected settings (`vercel.json` automatically sets Framework Preset to **Vite**, Build Command to `npm run build`, and Output Directory to `dist`), then click **Deploy**.
 4. Once live, open `/`, `/about`, `/projects`, `/planner`, and `/contact` and submit one test message on the Contact page to activate FormSubmit for `o.victory0585@miva.edu.ng`.
+
 
