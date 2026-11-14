@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="Sales distribution across days of the week showing Friday and Saturday peaks">
+  <rect width="720" height="420" fill="#f7f5f0"/>
+  <rect x="24" y="24" width="672" height="372" rx="10" fill="#ffffff" stroke="#e7e4dc"/>
+  <text x="48" y="62" font-family="Georgia, serif" font-size="19" font-weight="700" fill="#0f172a">Average Daily Sales by Trading Day</text>
+  <text x="48" y="84" font-family="sans-serif" font-size="12" fill="#475569">Friday and Saturday represent the highest store footfall and basket size</text>
+
+  <line x1="60" y1="300" x2="660" y2="300" stroke="#e7e4dc" stroke-width="1.5"/>
+  <rect x="82" y="206" width="56" height="94" rx="4" fill="#94a3b8"/>
+  <rect x="166" y="214" width="56" height="86" rx="4" fill="#cbd5e1"/>
+  <rect x="250" y="194" width="56" height="106" rx="4" fill="#94a3b8"/>
+  <rect x="334" y="182" width="56" height="118" rx="4" fill="#64748b"/>
+  <rect x="418" y="128" width="56" height="172" rx="4" fill="#0b2a4a"/>
+  <rect x="502" y="106" width="56" height="194" rx="4" fill="#b08d57"/>
+  <rect x="586" y="228" width="56" height="72" rx="4" fill="#cbd5e1"/>
+
+  <text x="110" y="324" font-family="sans-serif" font-size="12" fill="#475569" text-anchor="middle">Mon</text>
+  <text x="194" y="324" font-family="sans-serif" font-size="12" fill="#475569" text-anchor="middle">Tue</text>
+  <text x="278" y="324" font-family="sans-serif" font-size="12" fill="#475569" text-anchor="middle">Wed</text>
+  <text x="362" y="324" font-family="sans-serif" font-size="12" fill="#475569" text-anchor="middle">Thu</text>
+  <text x="446" y="324" font-family="sans-serif" font-size="12" font-weight="700" fill="#0b2a4a" text-anchor="middle">Fri</text>
+  <text x="530" y="324" font-family="sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">Sat</text>
+  <text x="614" y="324" font-family="sans-serif" font-size="12" fill="#475569" text-anchor="middle">Sun</text>
+
+  <text x="48" y="366" font-family="sans-serif" font-size="12" fill="#0b2a4a" font-weight="600">Peak trading window: Friday and Saturday bring 41% of weekly revenue</text>
+</svg>
